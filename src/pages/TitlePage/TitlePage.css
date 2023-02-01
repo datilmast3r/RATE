@@ -1,0 +1,94 @@
+.main-titlePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    width: 100%;
+    background: #000000;  
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364); 
+    /* background: linear-gradient(45deg, #5f2c82, #49a09d); 2da combinacion */
+    /* background: linear-gradient(45deg, #73c8a9, #373b44); 3era combinacion */
+    /* background: linear-gradient(45deg, #093028, #237a57); 4ta combinacion*/
+
+
+
+    background-size: 400%;
+    animation: color 8s ease infinite alternate;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .logo {
+    width: 250px;
+     filter: brightness(0);
+    filter: invert(1); 
+    position: relative;
+    right: 7px;
+}
+
+.logo-title {
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.subtitle{
+    color: whitesmoke;
+}
+ 
+.acountBtn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.createAccount-btn {
+    /* background-color: #00ff80; 1era combinacion
+    background-color: #203a43;
+    color: white;*/
+    color: white;
+    border: 1px solid;
+    font-size: 13px;
+    border-color: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.createAccount-btn:focus {
+    border: none;
+    outline: none;
+}
+
+.login-span {
+    /* color: rgb(255, 255, 255); 1era combinacion*/ 
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.login-link{
+    text-decoration: none;
+}
+
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
